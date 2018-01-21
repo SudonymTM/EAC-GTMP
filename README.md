@@ -23,6 +23,7 @@ Please refer to the [GTMP Wiki](https://wiki.gt-mp.net/index.php/Getting_Started
 ## 2. Configuration
 The configuration is done in the `meta.xml` in your `resources\cmds` folder.
 Following values need to be configured:
+
 | Property      | Default | Description                                        |
 | ------------- | ------- | -------------------------------------------------- |
 | debugmode     | true    | Toggles debug messages                             |
