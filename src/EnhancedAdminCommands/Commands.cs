@@ -9,6 +9,7 @@ using GrandTheftMultiplayer.Shared.Math;
 
 namespace EnhancedAdminCommands
 {
+    /// <summary></summary>
     public class Commands : Script
     {
         private bool IsDebugMode { get; set; }
@@ -73,7 +74,7 @@ namespace EnhancedAdminCommands
         }
 
         /// <summary>
-        /// Spawns a vehicle by a given <param name="hash">hash</param> for the current player
+        /// Spawns a vehicle by a given <seeparam name="hash">hash</seeparam> for the current player
         /// </summary>
         /// <param name="player"></param>
         /// <param name="hash"></param>
@@ -123,8 +124,8 @@ namespace EnhancedAdminCommands
         }
 
         /// <summary>
-        /// Spawns a weapon by a given <param name="hash">hash</param> for the <param name="target">target</param>.
-        /// If <param name="target">target</param> is null, the executing player will be selected.
+        /// Spawns a weapon by a given <seeparam name="hash">hash</seeparam> for the <seeparam name="target">target</seeparam>.
+        /// If <seeparam name="target">target</seeparam> is null, the executing player will be selected.
         /// </summary>
         /// <param name="player"></param>
         /// <param name="hash"></param>
@@ -147,10 +148,10 @@ namespace EnhancedAdminCommands
                 API.sendChatMessageToPlayer(player, $"~y~ [DEBUG] Gave {target.name} the Weapon: {hash} with {ammo} Ammo.");
             }
         }
-        
+
         /// <summary>
-        /// Sets the health for the <param name="target">target</param> to a specified <param name="value">value</param>.
-        /// If <param name="target">target</param> is null, the executing player will be selected.
+        /// Sets the health for the <seeparam name="target">target</seeparam> to a specified <seeparam name="value">value</seeparam>.
+        /// If <seeparam name="target">target</seeparam> is null, the executing player will be selected.
         /// </summary>
         /// <param name="player"></param>
         /// <param name="value"></param>
@@ -172,10 +173,10 @@ namespace EnhancedAdminCommands
                 API.sendChatMessageToPlayer(player, $"~y~ [DEBUG] Set {target.name}'s Health to: {value}");
             }
         }
-        
+
         /// <summary>
-        /// Sets the armor for the <param name="target">target</param> to a specified <param name="value">value</param>.
-        /// If <param name="target">target</param> is null, the executing player will be selected.
+        /// Sets the armor for the <seeparam name="target">target</seeparam> to a specified <seeparam name="value">value</seeparam>.
+        /// If <seeparam name="target">target</seeparam> is null, the executing player will be selected.
         /// </summary>
         /// <param name="player"></param>
         /// <param name="value"></param>
@@ -197,10 +198,10 @@ namespace EnhancedAdminCommands
                 API.sendChatMessageToPlayer(player, $"~y~ [DEBUG] Set {target.name}'s Armor to: {value}");
             }
         }
-        
+
         /// <summary>
-        /// Sets the health for the <param name="target">target</param> to 100.
-        /// If <param name="target">target</param> is null, the executing player will be selected.
+        /// Sets the health for the <seeparam name="target">target</seeparam> to 100.
+        /// If <seeparam name="target">target</seeparam> is null, the executing player will be selected.
         /// </summary>
         /// <param name="player"></param>
         /// <param name="target"></param>
@@ -221,10 +222,10 @@ namespace EnhancedAdminCommands
                 API.sendChatMessageToPlayer(player, $"~y~ [DEBUG] Fully healed Player: {target.name}");
             }
         }
-        
+
         /// <summary>
-        /// Sets the armor for the <param name="target">target</param> to 100.
-        /// If <param name="target">target</param> is null, the executing player will be selected.
+        /// Sets the armor for the <seeparam name="target">target</seeparam> to 100.
+        /// If <seeparam name="target">target</seeparam> is null, the executing player will be selected.
         /// </summary>
         /// <param name="player"></param>
         /// <param name="target"></param>
@@ -269,9 +270,9 @@ namespace EnhancedAdminCommands
                 API.sendChatMessageToPlayer(player, "~y~ [DEBUG] Repaired the current Vehicle!");
             }
         }
-        
+
         /// <summary>
-        /// Teleports the current player to <param name="target">target</param>'s position.
+        /// Teleports the current player to <seeparam name="target">target</seeparam>'s position.
         /// </summary>
         /// <param name="player"></param>
         /// <param name="target"></param>
@@ -290,9 +291,9 @@ namespace EnhancedAdminCommands
                 API.sendChatMessageToPlayer(player, $"~y~ [DEBUG] Teleported to: {target.name}");
             }
         }
-        
+
         /// <summary>
-        /// Teleports the <param name="target">target</param> to the current player's position.
+        /// Teleports the <seeparam name="target">target</seeparam> to the current player's position.
         /// </summary>
         /// <param name="player"></param>
         /// <param name="target"></param>

@@ -1,4 +1,6 @@
-﻿using System.Reflection;
+﻿<#@ template debug="false" hostspecific="false" language="C#" #>
+<#@ output extension=".cs" #>
+using System.Reflection;
 using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("EnhancedAdminCommands")]
 [assembly: AssemblyDescription("")]
@@ -9,8 +11,8 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyCulture("")]
 [assembly: ComVisible(false)]
 [assembly: Guid("66e2b44f-5a1b-4e91-895e-97b5b3b1baa8")]
-[assembly: AssemblyVersion("0.1.0.652")]
-[assembly: AssemblyFileVersion("0.1.0.652")]
+[assembly: AssemblyVersion("0.1.<#= this.RevisionNumber #>.<#= this.BuildNumber #>")]
+[assembly: AssemblyFileVersion("0.1.<#= this.RevisionNumber #>.<#= this.BuildNumber #>")]
 
 #if DEBUG
 [assembly: AssemblyConfiguration("Debug")]
@@ -18,3 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("Release")]
 #endif
 
+<#+
+int RevisionNumber = (int)(DateTime.UtcNow - new DateTime(2018, 1, 21)).TotalDays;
+int BuildNumber = (int)(DateTime.UtcNow.Subtract(DateTime.UtcNow.Date)).TotalMinutes / 2;
+#>
