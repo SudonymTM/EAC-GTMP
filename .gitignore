@@ -259,3 +259,7 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+
+src/resources/eac/*.dll
+src/resources/eac/*.xml
+!src/resources/eac/meta.xml
