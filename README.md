@@ -24,10 +24,9 @@ Please refer to the [GTMP Wiki](https://wiki.gt-mp.net/index.php/Getting_Started
 The Configuration is done in the commands.cs in your resources\cmds Folder.
 Following Values/Bool/Int need to be configured:
 ```c#
-    public bool debug = false;                 //<- Here you need to specify if you want to have debug enabled. (Possible Values: true, false)
-    public int vehConfig = 0;                   //<- Here you can set the Variant which is used to spawn Vehicles in. Please look on Line 10-16 for Informations on that.
-    public string groupName = "Admin";                 //<- Here you need to specify which Group you want these Commands used by. Anything under that can't access them.
-    public string allWepConfig = "resources\\cmds\\WeaponList";                 //<- Here you need to specify the Path to the cmds folder. Please use double Slashes "\\" since otherwise C# will have Problems with that.
+    public bool Debug = false;                 //<- Here you need to specify if you want to have debug enabled. (Possible Values: true, false)
+    public int vehicleSpawnConfig = 0;                   //<- Here you can set the Variant which is used to spawn Vehicles in. Please look on Line 10-16 for Informations on that.
+    public string GroupName = "Admin";                 //<- Here you need to specify which Group you want these Commands used by. Anything under that can't access them.
 ```
 ***Everything is documented in the commands.cs if you need further explaination***
 
