@@ -26,9 +26,9 @@ Following values need to be configured:
 
 | Property      | Default | Description                                        |
 | ------------- | ------- | -------------------------------------------------- |
-| debugmode     | true    | Toggles debug messages                             |
+| debugmode     | false    | Toggles debug messages                             |
 | vehicleconfig | 0       | Specifies the vehicle spawn method (see README.md) |
-| aclgroupname  | Admin   | Name of your ACL group                             |
+| aclgroupname  | Admin   | Name of your desired ACL group                      |
 
 
 ### Vehicle Config Types
@@ -49,16 +49,16 @@ In this table you can find all commands and their specific usage.
 | Command                         | Description                                                   |
 | ------------------------------- | ------------------------------------------------------------- |
 | `/help`                         | Displays all possible commands in Chat                        |
-| `/veh` *model*                  | Spawns the specified Model with the configured variant        |
+| `/veh` ***HASH/NAME***                  | Spawns the specified Model with the configured variant        |
 | `/allwep`                       | Gives the executing player all weapons                        |
-| `/givewep` *weapon ammo target* | Gives the target the specified weapon with the specified ammo |
-| `/healthset` *value target*     | Sets the Health of the target to the specified amount         |
-| `/armorset` *value target*      | Sets the Armor of the target to the specified amount          |
-| `/heal` *target*                | Heals the specified target completely                         |
-| `/armor` *target*               | Gives the specified target full Armor                         |
+| `/givewep` ***HASH/NAME | AMMO | TARGET*** | Gives the target the specified weapon with the specified ammo |
+| `/healthset` ***VALUE | TARGET***     | Sets the Health of the target to the specified amount         |
+| `/armorset` ***VALUE | TARGET***      | Sets the Armor of the target to the specified amount          |
+| `/heal` ***TARGET***                | Heals the specified target completely                         |
+| `/armor` ***TARGET***               | Gives the specified target full Armor                         |
 | `/fix`                          | Repairs the car the executing Player is sitting in            |
-| `/tele` *target*                | Teleports the executing Player to specified the Target        |
-| `/tpm` *target*                 | Teleports the specified Target to the executing Player        |
+| `/tele` ***TARGET***                | Teleports the executing Player to specified the Target        |
+| `/tpm` ***TARGET***                 | Teleports the specified Target to the executing Player        |
 
 ***More to come...***
 
