@@ -8,10 +8,10 @@ Here you can get all newest updates/bugfixes and an introduction!
 ## 1. Installation
 
 Installation is easy.
-Just go to your GT:MP server folder and paste the `cmds` folder into `resources`.
+Just go to your GT:MP server folder and paste the `eac` folder into `resources`.
 Once thats done, paste following line into your `settings.xml` (Root directory)
 ```xml
-<resource src="cmds" />
+<resource src="eac" />
 ```
 
 **NOTE**: For this script to work, you need to have an working ACL setup.
@@ -21,7 +21,7 @@ Please refer to the [GTMP Wiki](https://wiki.gt-mp.net/index.php/Getting_Started
 
 ----
 ## 2. Configuration
-The configuration is done in the `meta.xml` in your `resources\cmds` folder.
+The configuration is done in the `meta.xml` in your `resources\eac` folder.
 Following values need to be configured:
 
 | Property      | Default | Description                                        |

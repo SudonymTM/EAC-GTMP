@@ -39,8 +39,11 @@ namespace EnhancedAdminCommands
 #else
             IsDebugMode = API.getSetting<bool>("debugmode");
 #endif
-            VehSpawnConfig = API.getSetting<VehicleConfig>("vehicleconfig");
-            GroupName = API.getSetting<string>("groupname");
+
+            var vehSpawnConfig = API.getSetting<int>("vehicleconfig");
+            VehSpawnConfig = (VehicleConfig)vehSpawnConfig;
+
+            GroupName = API.getSetting<string>("aclgroupname");
 
             if (IsDebugMode)
             {
@@ -68,7 +71,7 @@ namespace EnhancedAdminCommands
 
             return canUse;
         }
-        
+
         /// <summary>
         /// Spawns a vehicle by a given <param name="hash">hash</param> for the current player
         /// </summary>
