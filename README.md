@@ -48,17 +48,17 @@ In this table you can find all commands and their specific usage.
 
 | Command                         | Description                                                   |
 | ------------------------------- | ------------------------------------------------------------- |
-| `/help`                         | Displays all possible commands in Chat                        |
-| `/veh` ***HASH/NAME***                  | Spawns the specified Model with the configured variant        |
-| `/allwep`                       | Gives the executing player all weapons                        |
-| `/givewep` ***HASH/NAME | AMMO | TARGET*** | Gives the target the specified weapon with the specified ammo |
-| `/healthset` ***VALUE | TARGET***     | Sets the Health of the target to the specified amount         |
-| `/armorset` ***VALUE | TARGET***      | Sets the Armor of the target to the specified amount          |
-| `/heal` ***TARGET***                | Heals the specified target completely                         |
-| `/armor` ***TARGET***               | Gives the specified target full Armor                         |
-| `/fix`                          | Repairs the car the executing Player is sitting in            |
-| `/tele` ***TARGET***                | Teleports the executing Player to specified the Target        |
-| `/tpm` ***TARGET***                 | Teleports the specified Target to the executing Player        |
+| `/help`                         				| Displays all possible commands in Chat                        |
+| `/veh` ***HASH/NAME***                 		| Spawns the specified Model with the configured variant        |
+| `/allwep`                       				| Gives the executing player all weapons                        |
+| `/givewep` ***HASH/NAME - AMMO - TARGET*** 	| Gives the target the specified weapon with the specified ammo |
+| `/healthset` ***VALUE - TARGET***     		| Sets the Health of the target to the specified amount         |
+| `/armorset` ***VALUE - TARGET***      		| Sets the Armor of the target to the specified amount          |
+| `/heal` ***TARGET***                			| Heals the specified target completely                         |
+| `/armor` ***TARGET***               			| Gives the specified target full Armor                         |
+| `/fix`                          				| Repairs the car the executing Player is sitting in            |
+| `/tele` ***TARGET***                			| Teleports the executing Player to specified the Target        |
+| `/tpm` ***TARGET***                 			| Teleports the specified Target to the executing Player        |
 
 ***More to come...***
 
