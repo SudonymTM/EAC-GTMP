@@ -230,12 +230,14 @@ namespace EnhancedAdminCommands
         /// <param name="player"></param>
         /// <param name="target"></param>
         [Command("armor")]
-        public void ArmorCommand(Client player, Client target)
+        public void ArmorCommand(Client player, Client target = null)
         {
             if (!CanUseCommand(player))
             {
                 return;
             }
+
+            target = target ?? player;
 
             API.setPlayerArmor(target, 100);
 
@@ -288,7 +290,7 @@ namespace EnhancedAdminCommands
 
             if (IsDebugMode)
             {
-                API.sendChatMessageToPlayer(player, $"~y~ [DEBUG] Teleported to: {target.name}");
+                API.sendChatMessageToPlayer(player, $"~y~ [DEBUG] Teleported to {target.name}");
             }
         }
 
@@ -326,11 +328,11 @@ namespace EnhancedAdminCommands
             }
 
             API.sendChatMessageToPlayer(player, "~y~ ---- ADMIN COMMANDS ----");
-            API.sendChatMessageToPlayer(player, "~b~[HELP] [ADMIN] || /veh [MODEL] --- Spawns the specified Car");
+            API.sendChatMessageToPlayer(player, "~b~[HELP] [ADMIN] || /veh [HASH/NAME] --- Spawns the specified Car");
             API.sendChatMessageToPlayer(player, "~b~[HELP] [ADMIN] || /allwep --- Gives the executing Player all Weapons");
-            API.sendChatMessageToPlayer(player, "~b~[HELP] [ADMIN] || /givewep [TARGET] [WEAPON] [AMMO] --- Gives the Target Player the specified Weapon with the specified Ammo");
-            API.sendChatMessageToPlayer(player, "~b~[HELP] [ADMIN] || /healthset [TARGET] [VALUE] --- Sets the Health of the specified Player to the specified Amount.");
-            API.sendChatMessageToPlayer(player, "~b~[HELP] [ADMIN] || /armorset [TARGET] [VALUE] --- Sets the Armor of the specified Player to the specified Amount.");
+            API.sendChatMessageToPlayer(player, "~b~[HELP] [ADMIN] || /givewep [HASH/NAME] [AMMO] [TARGET] --- Gives the Target Player the specified Weapon with the specified Ammo");
+            API.sendChatMessageToPlayer(player, "~b~[HELP] [ADMIN] || /healthset [VALUE] [TARGET] --- Sets the Health of the specified Player to the specified Amount.");
+            API.sendChatMessageToPlayer(player, "~b~[HELP] [ADMIN] || /armorset [VALUE] [TARGET] --- Sets the Armor of the specified Player to the specified Amount.");
             API.sendChatMessageToPlayer(player, "~b~[HELP] [ADMIN] || /heal [TARGET] --- Fully heals the specified target.");
             API.sendChatMessageToPlayer(player, "~b~[HELP] [ADMIN] || /armor [TARGET] --- Gives the specified target full Armor.");
             API.sendChatMessageToPlayer(player, "~b~[HELP] [ADMIN] || /fix --- Repairs the current Vehicle completely.");

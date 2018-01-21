@@ -4,7 +4,7 @@
   <script src="EnhancedAdminCommands.dll" type="server" lang="compiled" />
   
   <settings>
-    <setting name="debugmode" value="true" default="true" description="Toggles debug messages" />
+    <setting name="debugmode" value="false" default="false" description="Toggles debug messages" />
     <setting name="vehicleconfig" value="0" default="0" description="Specifies the vehicle spawn method (see README.md)" />
     <setting name="aclgroupname" value="Admin" default="Admin" description="Name of your ACL group" />
   </settings>
