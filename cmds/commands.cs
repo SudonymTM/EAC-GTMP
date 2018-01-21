@@ -61,8 +61,7 @@ public class Commands : Script
             return;
         var hash = API.getHashKey(request);
         var rotation = API.getEntityRotation(player.handle);
-        Vector3 vector = API.getEntityRotation(player.handle);
-        var vehicle = API.createVehicle(hash, player.position, new Vector3(0, 0, vector.Z), 0, 0);
+        var vehicle = API.createVehicle(hash, player.position, new Vector3(0, 0, rotation.Z), 0, 0);
         if ((vehicleSpawnConfig == 3 || vehicleSpawnConfig == 4) && player.isInVehicle)
             API.deleteEntity(player.vehicle);
         if (vehicleSpawnConfig == 2 || vehicleSpawnConfig == 4)
