@@ -8,7 +8,7 @@ using GrandTheftMultiplayer.Shared;
 using GrandTheftMultiplayer.Shared.Math;
 
 /* ------------ VEHICLE INFO ------------
-* If you want to use other Vehicle Spawn Mathods, set the "vehConfig" int to the desired Method.
+* If you want to use other Vehicle Spawn Mathods, set the "vehicleSpawnConfig" int to the desired Method.
 * Method 1: Spawns the car next to the Player without Deleting the current one
 * Method 2: Spawns the car and the Player automatically is spawned within it without deleting the current one
 * Method 3: Like Method 1 just whilst deleting the current car
@@ -23,7 +23,7 @@ using GrandTheftMultiplayer.Shared.Math;
 * Default: "false"
 *
 * ------------ ACL (ADMIN) INFO ------------
-* If your highest group has a diffrent Name and is not default (Admin), set the "groupName" string to your desired ACL Group
+* If your highest group has a diffrent Name and is not default (Admin), set the "GroupName" string to your desired ACL Group
 * Default: Admin (Case-Sensitive!)
 *
 *
