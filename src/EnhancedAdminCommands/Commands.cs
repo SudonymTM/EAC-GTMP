@@ -11,9 +11,9 @@ namespace EnhancedAdminCommands
 {
     public class Commands : Script
     {
-        private bool IsDebugMode { get; }
-        private VehicleConfig VehSpawnConfig { get; }
-        private string GroupName { get; }
+        private bool IsDebugMode { get; set; }
+        private VehicleConfig VehSpawnConfig { get; set; }
+        private string GroupName { get; set; }
 
         /// <summary>
         /// Initializes a new instance of <see cref="Commands"/>
@@ -25,21 +25,34 @@ namespace EnhancedAdminCommands
             {
                 Debugger.Launch();
             }
+#endif
 
+            API.onResourceStart += OnResourceStarted;
+        }
+
+        private void OnResourceStarted()
+        {
+            API.onResourceStop += OnResourceStopped;
+
+#if DEBUG
             IsDebugMode = true;
 #else
             IsDebugMode = API.getSetting<bool>("debugmode");
 #endif
-
             VehSpawnConfig = API.getSetting<VehicleConfig>("vehicleconfig");
             GroupName = API.getSetting<string>("groupname");
 
             if (IsDebugMode)
             {
-                API.consoleOutput(LogCat.Debug, "Script started...");
+                API.consoleOutput(LogCat.Debug, "Script started");
             }
         }
-        
+
+        private void OnResourceStopped()
+        {
+
+        }
+
         /// <summary>
         /// This method checks if the client has the required ACL permissions.
         /// </summary>
