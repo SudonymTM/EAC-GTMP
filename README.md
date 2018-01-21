@@ -1,12 +1,11 @@
 # [EAC] Extended Admin Commands
-
-####This is the Repo for the EAC Script.
+## This is the Repo for the EAC Script.
 Here you can get all newest Updates/Bugfixes and an Introduction!
 
 
 
 ----
-###1. Installation
+## 1. Installation
 
 Installation is easy.
 Just go to your GT:MP Server Folder and paste the "*cmds*" folder into "*resources*".
@@ -21,7 +20,7 @@ Please refer to the [GTMP Wiki](https://wiki.gt-mp.net/index.php/Getting_Started
 
 
 ----
-####2. Configuration
+## 2. Configuration
 The Configuration is done in the commands.cs in your resources\cmds Folder.
 Following Values/Bool/Int need to be configured:
 ```c#
@@ -35,7 +34,7 @@ Following Values/Bool/Int need to be configured:
 
 
 ----
-####3. Commands
+## 3. Commands
 In this Table you can find all Commands and their specific Usage.
 
 | Command | Description                    |
@@ -57,7 +56,7 @@ In this Table you can find all Commands and their specific Usage.
 
 
 ----
-####4.  Other
+## 4.  Other
 First off, thanks for using EAC.
 If you find any Bugs or you have any Ideas on other Commands, just contribute, open up an Issue or write me a Message.
 
