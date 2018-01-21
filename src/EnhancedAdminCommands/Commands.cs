@@ -21,7 +21,7 @@ namespace EnhancedAdminCommands
         public Commands()
         {
 #if DEBUG
-            if (Debugger.IsAttached)
+            if (!Debugger.IsAttached)
             {
                 Debugger.Launch();
             }
