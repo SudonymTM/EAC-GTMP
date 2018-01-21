@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27309.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnhancedAdminCommands", "src\EnhancedAdminCommands\EnhancedAdminCommands.csproj", "{66E2B44F-5A1B-4E91-895E-97B5B3B1BAA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "resources", "src\resources\resources.csproj", "{43FEA995-CD9C-4A71-A7EC-11AFA218BDAE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A7E092CB-E7EB-43B3-AA7D-D5AB35BA3D86}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{66E2B44F-5A1B-4E91-895E-97B5B3B1BAA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66E2B44F-5A1B-4E91-895E-97B5B3B1BAA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66E2B44F-5A1B-4E91-895E-97B5B3B1BAA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66E2B44F-5A1B-4E91-895E-97B5B3B1BAA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43FEA995-CD9C-4A71-A7EC-11AFA218BDAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43FEA995-CD9C-4A71-A7EC-11AFA218BDAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43FEA995-CD9C-4A71-A7EC-11AFA218BDAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43FEA995-CD9C-4A71-A7EC-11AFA218BDAE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{66E2B44F-5A1B-4E91-895E-97B5B3B1BAA8} = {A7E092CB-E7EB-43B3-AA7D-D5AB35BA3D86}
+		{43FEA995-CD9C-4A71-A7EC-11AFA218BDAE} = {A7E092CB-E7EB-43B3-AA7D-D5AB35BA3D86}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6194F5EA-A5A7-49B5-ADE9-0B11629CD43F}
+	EndGlobalSection
+EndGlobal

@@ -1,6 +1,6 @@
 # [EAC] Extended Admin Commands
-## This is the Repo for the EAC Script.
-Here you can get all newest Updates/Bugfixes and an Introduction!
+## This is the repo for the EAC script.
+Here you can get all newest updates/bugfixes and an introduction!
 
 
 
@@ -8,47 +8,56 @@ Here you can get all newest Updates/Bugfixes and an Introduction!
 ## 1. Installation
 
 Installation is easy.
-Just go to your GT:MP Server Folder and paste the "*cmds*" folder into "*resources*".
-Once thats done, paste following line into your settings.xml (Root Directory)
+Just go to your GT:MP server folder and paste the `cmds` folder into `resources`.
+Once thats done, paste following line into your `settings.xml` (Root directory)
 ```xml
 <resource src="cmds" />
 ```
 
-**NOTE**: For this Script to work, you need to have an working ACL Setup.
-Please refer to the [GTMP Wiki](https://wiki.gt-mp.net/index.php/Getting_Started_with_the_Server_%26_ACL) for Informations on how to acomplish that.
+**NOTE**: For this script to work, you need to have an working ACL setup.
+Please refer to the [GTMP Wiki](https://wiki.gt-mp.net/index.php/Getting_Started_with_the_Server_%26_ACL) for informations on how to acomplish that.
 
 
 
 ----
 ## 2. Configuration
-The Configuration is done in the commands.cs in your resources\cmds Folder.
-Following Values/Bool/Int need to be configured:
-```c#
-    public bool Debug = false;                 //<- Here you need to specify if you want to have debug enabled. (Possible Values: true, false)
-    public int vehicleSpawnConfig = 0;                   //<- Here you can set the Variant which is used to spawn Vehicles in. Please look on Line 10-16 for Informations on that.
-    public string GroupName = "Admin";                 //<- Here you need to specify which Group you want these Commands used by. Anything under that can't access them.
-```
-***Everything is documented in the commands.cs if you need further explaination***
+The configuration is done in the `meta.xml` in your `resources\cmds` folder.
+Following values need to be configured:
+| Property      | Default | Description                                        |
+| ------------- | ------- | -------------------------------------------------- |
+| debugmode     | true    | Toggles debug messages                             |
+| vehicleconfig | 0       | Specifies the vehicle spawn method (see README.md) |
+| aclgroupname  | Admin   | Name of your ACL group                             |
+
+
+### Vehicle Config Types
+| Index | Description                                |
+| ----- | ------------------------------------------ |
+| 0     | Nothing                                    |
+| 1     | Spawns the car next to the player          |
+| 2     | Spawns the car and puts the player into it |
+| 3     | Like 1, but also deletes the vehicle       |
+| 4     | Like 2, but also deletes the vehicle       |
 
 
 
 ----
 ## 3. Commands
-In this Table you can find all Commands and their specific Usage.
+In this table you can find all commands and their specific usage.
 
-| Command | Description                    |
-| ------------- | ------------------------------ |
-| `/help`      | Displays all possible Commands in Chat       |
-| `/veh` *model*   | Spawns the specified Model with the configured Variant     |
-| `/allwep`      | Gives the executing Player all Weapons       |
-| `/givewep` *target weapon ammo*     | Gives the target the specified Weapon (Case-Sensitive!) with the specified Ammo.       |
-| `/healthset` *target value*      | Sets the Health of the target to the specified amount       |
-| `/armorset` *target value*     | Sets the Armor of the target to the specified amount       |
-| `/heal` *target*      | Heals the specified target completely       |
-| `/armor` *target*      | Gives the specified target full Armor       |
-| `/fix`      | Repairs the car the executing Player is sitting in       |
-| `/tele` *target*      | Teleports the executing Player to specified the Target      |
-| `/tpm` *target*     | Teleports the specified Target to the executing Player       |
+| Command                         | Description                                                   |
+| ------------------------------- | ------------------------------------------------------------- |
+| `/help`                         | Displays all possible commands in Chat                        |
+| `/veh` *model*                  | Spawns the specified Model with the configured variant        |
+| `/allwep`                       | Gives the executing player all weapons                        |
+| `/givewep` *weapon ammo target* | Gives the target the specified weapon with the specified ammo |
+| `/healthset` *value target*     | Sets the Health of the target to the specified amount         |
+| `/armorset` *value target*      | Sets the Armor of the target to the specified amount          |
+| `/heal` *target*                | Heals the specified target completely                         |
+| `/armor` *target*               | Gives the specified target full Armor                         |
+| `/fix`                          | Repairs the car the executing Player is sitting in            |
+| `/tele` *target*                | Teleports the executing Player to specified the Target        |
+| `/tpm` *target*                 | Teleports the specified Target to the executing Player        |
 
 ***More to come...***
 
