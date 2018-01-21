@@ -1,4 +1,0 @@
-<meta>
-	<info name="[EAC] Extended Admin Commands" author="Sudonym" type="script" />
-	<script src="commands.cs" type="server" lang="csharp" />
-</meta>
