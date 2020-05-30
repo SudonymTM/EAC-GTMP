@@ -69,4 +69,4 @@ In this table you can find all commands and their specific usage.
 First off, thanks for using EAC.
 If you find any Bugs or you have any Ideas on other Commands, just contribute, open up an Issue or write me a Message.
 
-**Have fun using EAC** :))
+**Have fun using EAC** :)
